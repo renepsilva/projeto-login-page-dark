@@ -1,4 +1,4 @@
-# 🔥 Introdução
+# 🔥 Login Page + Modo Dark
 Esta é uma atualização do meu primeiro projeto Login Page adicionando um modo dark simples uitilizando js e deixando a página um pouco mais dinamica e agradável.
 
 # 📦 Ferramentas e Tecnologias usadas:
