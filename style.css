@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+html{
+    font-size: 62,5%;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #ffff;
+    transition: 0.5s ease-in;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.mainlog{
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.dark{
+background-color: #000000;
+transition: 0.5s ease-in-out;
+
+}
+
+.right-log{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-log{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-log a{
+   color: #7B2CBF; 
+    text-decoration: none;
+}
+
+.dark .left-log a{
+    color: #7B2CBF; 
+     text-decoration: none;
+     color: #9d4edd;
+ }
+
+.create-acc{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: column;
+width: 100%;
+letter-spacing: 1px;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(0.9);
+}
+
+.dark .label{
+    background-color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(0.9);
+}
+
+.label .ball-tr{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball-tr{
+    transform: translateX(24px);
+}
+
+.fa-moon{
+    color: #1b263b;
+}
+
+.dark .fa-moon{
+    color:#1b263b;
+}
+
+.fa-sun{
+    color: #fb8500;
+}
+
+.mode-dark{
+    display: flex;
+    justify-content: center;
+    margin-left: 455px;
+    position: absolute;
+    margin-top: 35px;
+}
+
+.card-log{
+width: 60%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 30px 35px;
+}
+
+.left-log h1{
+    font-weight: 800;
+}
+
+.dark .left-log a:hover{
+    color:#7B2CBF
+}
+
+.dark .left-log h1{
+    font-weight: 800;
+    color: #fff;
+}
+
+.text-field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.dark .text-field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    color: #ffffff;
+}
+
+.text-field input{
+    width: 100%;
+    border: 2px solid #495057;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 12px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.dark .text-field input{
+    width: 100%;
+    border: 2px solid #7B2CBF;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 12px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.text-field input:hover{
+    border: 2px solid #7B2CBF;}
+
+    .dark .text-field input:hover{
+        border: 2px solid #9d4edd;}
+
+.text-field label{
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.text-field a{
+display: flex;
+margin-top: 15px;
+font-weight: 800;
+
+}
+
+.text-field a:hover{
+    color: #7B2CBF;
+    }
+
+.dark .text-field a{
+    display: flex;
+    margin-top: 15px;
+    font-weight: 800;
+    color: #9d4edd;
+    }
+
+.btn-log{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: #7B2CBF;
+    color: #ffff;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #10002b;
+    transition: all 0.3s ease;
+}
+
+.dark .btn-log{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: #9d4edd;
+    color: #ffff;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #10002b;
+    transition: all 0.3s ease;
+}
+
+.btn-log:hover{
+    background: #9d4edd;
+}
+
+.dark .btn-log:hover{
+    background: #7B2CBF;
+}
+
+.terms{
+    display: flex;
+}
+
+.terms input{
+    margin: 15px;
+}
+
+.terms h3{
+    font-size: 15px;
+}
+
+.dark .terms h3{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.dark h3{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+input[type='checkbox']{
+    accent-color: #9d4edd;
+}
+
+.login-img{
+    width: 35vw;
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-log{
+        width: 85%;
+    }
+    }
+
+    @media only screen and (max-width: 600px){
+        .mainlog{
+            flex-direction: column;
+        }
+
+        .left-log{
+            width: 100%;
+            height: auto;
+        }
+
+        .right-log{
+            width: 100%;
+            height: auto;
+        }
+
+        .card-log{
+            width: 90%;
+        }
+
+        .login-img{
+            display: none;
+        }
+
+        .terms{
+            font-size: 10px;
+        }
+
+        .text-field a:hover{
+            color: #7B2CBF;
+        }
+
+        .mode-dark{
+            display: flex;
+            justify-content: center;
+            margin-left: 200px;
+            position: absolute;
+            margin-top: 35px;
+        }
+    }
+
